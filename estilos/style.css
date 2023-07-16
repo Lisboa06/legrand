@@ -9,7 +9,7 @@
     --legrand-color:#00e6e2;
 
     --defaultMode-bgColor: #e8e8e8;
-    --defaultMode-text-color: black;
+    --defaultMode-text-color: #000000;
 
     --darkMode-bgColor: #141414;
     --darkMode-text-color: #cbcbcb;
@@ -21,11 +21,11 @@
 }
 
 body {
-    background-color: #414141;
+    background-color: #6e9c9d;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 section > h2 {
-    background-color: #30727e;
+    background-color: #0f363d;
     padding: 4px 8px;
     color: whitesmoke;
     text-shadow: 0px 0px 5px black;
@@ -120,7 +120,7 @@ section > h2 {
     padding: 2px;
     border-radius: 5px;
     right: 5%;
-    top: 25%;
+    top: 30%;
     /* margin-top: -12px; */
     /* margin-right: 30px; */
     box-shadow: 0px 0px 5px #00000077;
@@ -191,10 +191,6 @@ main {
     width: 100%;
 }
 
-#servicos {
-    padding: 10px;
-}
-
 /* ------------------------------------- */
         /* SERVIÇOS */
 .project-left-border { /* Inutilizando */
@@ -206,9 +202,10 @@ main {
 }
 
 .servicos-card {
-    max-width: 570px;
-    background-color: var(--darkMode-bgColor);
-    color: #ffffff;
+    width: 95%;
+    /* position: relative; */
+    background-color: var(--defaultMode-bgColor);
+    color: var(--defaultMode-text-color);
     text-align: center;
     border-radius: 17px;
     padding: 14px;
@@ -217,7 +214,7 @@ main {
 }
 .servicos-card img {
     height: 44px;
-    background-color: #bcb0b0;
+    background-color: #dbdbdb;
     padding: 5px;
     border-radius: 5px;
 }
@@ -233,17 +230,17 @@ main {
 /* ------------------------------------- */
     /* Perfis -START*/
 .profile-card {
+    color: var(--defaultMode-text-color);
+    background-color: var(--defaultMode-bgColor);
     font-family: 'Roboto', Arial, sans-serif;
     position: relative;
     overflow: hidden;
     margin: 10px auto 24px auto;
     min-width: 230px;
-    max-width: 570px;
+    /* max-width: 570px; */
     width: 95%;
-    color: #ffffff;
     text-align: left;
     line-height: 1.4em;
-    background-color: var(--darkMode-bgColor);
     box-shadow: 0 0 10px black;
     border-radius: 8px;
 }
@@ -270,7 +267,7 @@ main {
     opacity: 0.85;
 }
 .profile-card figcaption {
-    background-color: var(--darkMode-bgColor);
+    background-color: var(--defaultMode-bgColor);
     width: 100%;
     padding: 25px;
     position: relative;
@@ -284,7 +281,7 @@ main {
     height: 0;
     border-style: solid;
     border-width: 55px 0 0 490px;
-    border-color: transparent transparent transparent #141414;
+    border-color: transparent transparent transparent var(--defaultMode-bgColor);
 }
 .profile-card figcaption a {
     padding: 5px;
@@ -293,7 +290,7 @@ main {
     font-size: 0.7em;
     text-transform: uppercase;
     margin: 10px 0;
-    opacity: 0.65;
+    opacity: 0.90;
     width: 47%;
     text-align: center;
     font-weight: 600;
@@ -315,21 +312,23 @@ main {
     z-index: 1;
     max-width: 95px;
     opacity: 1;
-    box-shadow: 0 0 15px #001d1a;
+    box-shadow: 0 0 15px #001d1a8d;
 }
 .profile-card .profile-link {
     margin-right: 6%;
     border-color: var(--legrand-color);
     color: var(--legrand-color);
+    background-color: #154049;
 }
 .profile-card .info {
-    color: green;
+    color: #45cd45;
     border-color: green;
+    background-color: #1c6a0b;
 }
 .profile-link img, .info img {
     height: 28px;
     margin-right: 5px;
-    filter: grayscale(100%);
+    filter: grayscale(50%);
 }
 .profile-link:hover img, .info:hover img {
     filter: grayscale(0%);
@@ -337,12 +336,14 @@ main {
 
 .profile-card h2 {
     margin: 0 0 5px;
-    font-weight: 300;
+    font-weight: 500;
+    border-bottom: 1px solid black;
 }
 .profile-card h2 span {
     display: block;
     font-size: 0.5em;
-    color: var(--legrand-color);
+    color: #009898;
+    text-shadow: 0px 0px 5px #00000036;
 }
 .profile-card p {
     margin: 0 0 10px;
@@ -370,77 +371,18 @@ main {
     position: absolute;
     width: 6px;
     height: 100%;
-    background-color: #cbcbcb;
+    background-color: var(--defaultMode-bgColor);
     top: 0px;
     left: 29px;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 2.3s linear forwards;
-}
-@keyframes moveline {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 100%;
-    }
 }
 
 .container {
     position: relative;
     width: calc(95% - 5px);
     padding: 15px 0px 0px 17px;
-    opacity: 0;
-    animation: timeline-animation 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-/*  ANIMAÇÃO PASSADO PARA A MEDIA QUERY */
-@keyframes timeline-animation {
-    0%{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    25%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-.container:nth-child(1) {animation-delay: 0s;}
-.container:nth-child(2) {animation-delay: .5s;}
-.container:nth-child(3) {animation-delay: 1s;}
-.container:nth-child(4) {animation-delay: 1.5s;}
-.container:nth-child(5) {animation-delay: 2s;}
-.container:nth-child(6) {animation-delay: 2.5s;}
-
-
-.container .timeline-icon {
-    animation: timeline-icon-animation .7s cubic-bezier(0.215, 0.610, 0.455, 1);
-}
-@keyframes timeline-icon-animation {
-    0%{
-        opacity: 0;
-        scale: .5;
-    }
-    25%{
-        opacity: 1;
-    }
-    40% {
-        scale: 1.2;
-    }
-    100%{
-        opacity: 1;
-        scale: 1;
-    }
-}
-.container:nth-child(1) .timeline-icon {animation-delay: 0s;}
-.container:nth-child(2) .timeline-icon {animation-delay: .5s;}
-.container:nth-child(3) .timeline-icon {animation-delay: 1s;}
-.container:nth-child(4) .timeline-icon {animation-delay: 1.5s;}
-.container:nth-child(5) .timeline-icon {animation-delay: 2s;} 
-/* PASSAR PARA MEDIA QUERY 
-*/
 
 .container img {
     position: absolute;
@@ -455,7 +397,7 @@ main {
 }
 
 .text-box {
-    background-color: #fff;
+    background-color: var(--defaultMode-bgColor);
     padding: 15px 20px;
     margin: 0 0 0 52px;
     border-radius: 7px;
@@ -498,7 +440,7 @@ main {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: none;
-    border-right: 15px solid #fff;
+    border-right: 15px solid var(--defaultMode-bgColor);
 }
 
 
@@ -564,7 +506,6 @@ footer a:hover {
     margin: 0;
 }
 
-/* Estilos para o link do Instagram */
 .footer-bottom a {
     display: inline-block;
 }

@@ -55,7 +55,7 @@ navLinks.forEach(function(link) {
     var targetOffset = document.querySelector(id).offsetTop;
     
     window.scrollTo({
-      top: targetOffset - 30,
+      top: targetOffset - 15,
       behavior: 'smooth'
     });
   });
