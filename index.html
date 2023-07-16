@@ -5,29 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    <link rel="shortcut icon" href="imagens/legrand/legrand-logo-simbolo.ico" type="image/x-icon">
     <title>Legrand</title>
 </head>
 <body>
-    <header>
-            <div class="legrand-title">
-                <img src="imagens/legrand/legrand-logo-simbolo.png" alt="Legrand Logo">
-                <h1>
-                    <span>LEGRAND</span> <span>ENGENHARIA</span>
-                </h1>
-            </div>
-            <p>Bem vindo à Legrand Engenharia</p>
-        <nav>
-            <ol>
-                <li>Sobre nós</li>
-                <li>Serviços</li>
-                <li>Contatos</li>
-                <li><a href="projeto-timeline/projetos-timeline.html">Projetos</a></li>
-            </ol>
+    <header class="header">
+        <div class="legrand-title">
+            <img src="imagens/legrand/legrand-logo-simbolo.png" alt="Legrand Logo">
+            <h1>
+                <span>LEGRAND</span> 
+                <span>ENGENHARIA</span>
+            </h1>
+        </div>
+        <nav class="nav-bar">
+            <div class="mobile-nav-list"> <!-- Menu de Celular -->
+                <div class="menu-icon menu-open">
+                    <input type="checkbox">
+                    <span class="menu-icon-bar-1"></span>
+                    <span class="menu-icon-bar-2"></span>
+                    <span class="menu-icon-bar-3"></span>
+                </div>
+                <ul id="menuItems">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Contatos</a></li>
+                    <li><a href="#project-timeline">Projetos</a></li>
+                </ul>
+                </div>
+            <!-- <div class="pc-nav-list"> --> <!-- Menu de Computador+ -->
+                <!-- <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Contatar</a></li>
+                </ul> -->
+            <!-- </div> -->
         </nav>
     </header>
     <main>
-        <section> <!-- EQUIPE -->
+        <section id="servicos"> <!-- SERVIÇOS -->
+            <h2>Nossos Serviços:</h2>
+            <div class="servicos-card">
+                <!-- <div class="project-left-border"></div> -->
+                <img src="imagens/icons/servicos/construction_building_crane_icon.png" alt="ícone">
+                <h3>Projetos estruturais</h3>
+                <p>
+                    Fazemos projetos complementares ao arquitetônico, cujo foco é o dimensionamento e detalhamento dos elementos estruturais (pilares, vigas, lajes).
+                </p>
+            </div>
+            <div class="servicos-card">
+                <img src="imagens/icons/servicos/motor.png" alt="ícone">
+                <h3>Projetos elétricos</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
+                </p>
+            </div>
+            <div class="servicos-card">
+                <img src="imagens/icons/servicos/sink_water_tap_icon.png" alt="ícone">
+                <h3>Projetos de Água fria e esgoto</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
+                </p>
+            </div>
+            <div class="servicos-card">
+                <img src="imagens/icons/servicos/fireextinguisher.png" alt="ícone">
+                <h3>Projetos de prevenção e combate à incêndio</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
+                </p>
+            </div>
+            <div class="servicos-card">
+                <img src="imagens/icons/servicos/engineering_construction_building_icon.png" alt="ícone">
+                <h3>Acompanhamento de obra</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
+                </p>
+            </div>
+            <div class="servicos-card">
+                <img src="imagens/icons/servicos/conversation_meeting_discussion_icon.png" alt="ícone">
+                <h3>Consultoria</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
+                </p>
+            </div>
+            <div class="servicos-card">
+                <img src="imagens/icons/servicos/education_book_icon.png" alt="ícone">
+                <h3>Laudo de inspeção predial</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id="equipe"> <!-- EQUIPE -->
             <h2>Nossa equipe:</h2>
             <figure class="profile-card hover">
                 <!-- <img src="imagens/profile-building.jpg" alt="Fundo do perfil" class="profile-background" /> -->
@@ -55,87 +122,96 @@
             </figure>
         </section>
         <hr>
-        <section> <!-- SERVIÇOS -->
-            <h2>Nossos Serviços:</h2>
-
-            <div class="servicos-card">
-                <!-- <div class="project-left-border"></div> -->
-                <img src="imagens/icons/construction_building_crane_icon.png" alt="ícone">
-                <h3>Projetos estruturais</h3>
-                <p>
-                    Fazemos projetos complementares ao arquitetônico, cujo foco é o dimensionamento e detalhamento dos elementos estruturais (pilares, vigas, lajes).
-                </p>
-            </div>
-            <div class="servicos-card">
-                <img src="imagens/icons/motor.png" alt="ícone">
-                <h3>Projetos elétricos</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
-                </p>
-            </div>
-            <div class="servicos-card">
-                <img src="imagens/icons/sink_water_tap_icon.png" alt="ícone">
-                <h3>Projetos de Água fria e esgoto</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
-                </p>
-            </div>
-            <div class="servicos-card">
-                <img src="imagens/icons/fireextinguisher.png" alt="ícone">
-                <h3>Projetos de prevenção e combate à incêndio</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
-                </p>
-            </div>
-            <div class="servicos-card">
-                <img src="imagens/icons/engineering_construction_building_icon.png" alt="ícone">
-                <h3>Acompanhamento de obra</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
-                </p>
-            </div>
-            <div class="servicos-card">
-                <img src="imagens/icons/conversation_meeting_discussion_icon.png" alt="ícone">
-                <h3>Consultoria</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
-                </p>
-            </div>
-            <div class="servicos-card">
-                <img src="imagens/icons/education_book_icon.png" alt="ícone">
-                <h3>Laudo de inspeção predial</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam deserunt distinctio eum ipsam voluptas? Libero consequatur ratione nostrum, nam vel optio debitis. Numquam temporibus repellat iste, molestiae fugit adipisci!
-                </p>
+        <section id="project-timeline">
+            <h2>Projetos:</h2>
+            <div class="timeline">
+                <div class="container left-container">
+                    <img src="imagens/icons/clock_theapplication.png" class="timeline-icon" alt="">
+                    <div class="text-box">
+                        <h2>Projeto São Braz</h2>
+                        <small>2018 - 2019</small>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minus magnam quod deserunt tempora quas repellendus hic sunt doloribus quis necessitatibus recusandae, at esse a ex inventore sequi. Vel, quos.
+                        </p>
+                        <button class="button01" onclick="alert('Em progresso...')">Ver Mais</button>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="container right-container">
+                    <img src="imagens/icons/clock_theapplication.png" class="timeline-icon" alt="">
+                    <div class="text-box">
+                        <h2>Projeto Líder</h2>
+                        <small>2020 - 2021</small>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minus magnam quod deserunt tempora quas repellendus hic sunt doloribus quis necessitatibus recusandae, at esse a ex inventore sequi. Vel, quos.
+                        </p>
+                        <button class="button01" onclick="alert('Em progresso...')">Ver Mais</button>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="container left-container">
+                    <img src="imagens/icons/clock_theapplication.png" class="timeline-icon" alt="">
+                    <div class="text-box">
+                        <h2>Projeto Nazaré</h2>
+                        <small>2022</small>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minus magnam quod deserunt tempora quas repellendus hic sunt doloribus quis necessitatibus recusandae, at esse a ex inventore sequi. Vel, quos.
+                        </p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="container right-container">
+                    <img src="imagens/icons/clock_theapplication.png" class="timeline-icon" alt="">
+                    <div class="text-box">
+                        <h2>Projeto Fátima</h2>
+                        <small>2023</small>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minus magnam quod deserunt tempora quas repellendus hic sunt doloribus quis necessitatibus recusandae, at esse a ex inventore sequi. Vel, quos.
+                        </p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="container left-container">
+                    <img src="imagens/icons/clock_theapplication.png" class="timeline-icon" alt="">
+                    <div class="text-box">
+                        <h2>Projeto Alphaville</h2>
+                        <small>Em Progresso</small>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minus magnam quod deserunt tempora quas repellendus hic sunt doloribus quis necessitatibus recusandae, at esse a ex inventore sequi. Vel, quos.
+                        </p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
             </div>
         </section>
-        
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-left">
-              <h3>Engenharia Legrand</h3>
-              <p>Endereço: Rua Engenheiro Fulano de Tal, 123</p>
-              <p>Cidade: Exemploville - Estado</p>
-              <p>CEP: 12345-678</p>
+                <h3>Engenharia Legrand</h3>
+                <p>Endereço: Rua Engenheiro Fulano de Tal, 123</p>
+                <p>Cidade: Exemploville - Estado</p>
+                <p>CEP: 12345-678</p>
             </div>
             <div class="footer-right">
-              <ul>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-              </ul>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="footer-bottom">
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2023 Engenharia Legrand. Todos os direitos reservados.</p>
             <div>
-                <a href="https://www.instagram.com/legrand.engenharia/">
+                <a href="https://www.instagram.com/legrand.engenharia/" target="_blank">
                     <img src="imagens/icons/social/Instagram_icon.png" alt="Instagram">Nosso instagram
                 </a>
             </div>
-            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
