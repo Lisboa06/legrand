@@ -102,10 +102,12 @@ section > h2 {
     transition: all .1s ease;
 }
 .mobile-nav-list ul li{
+    background-color: #72727257;
     /* margin: 5px 0 0 0; */
-    padding: 3pxpx 0;
+    padding: 3px 0;
     /* border-top: 1px solid #414141;
     border-bottom: 2px solid #d4faff; */
+    border-radius: 8px;
     text-decoration: none;
     box-shadow: 0px 0px 10px #00000080;
 }
