@@ -209,7 +209,6 @@ main > section > h2 {
 }
 /* ------------------------------------- */
         /* SERVIÇOS */
-
 /* .project-left-border {  Inutilizando 
     width: 4px;
     height: 130px;
@@ -250,9 +249,6 @@ main > section > h2 {
 
 /* ------------------------------------- */
     /* Perfis -START*/
-
-
-
 .profile-card {
     color: var(--defaultMode-text-color);
     background-color: var(--defaultMode-bgColor);
@@ -438,7 +434,6 @@ main > section > h2 {
     margin-bottom: 6px;
 }
 
-
 .text-box .button01 {
     background-color: white;
     width: 100%;
@@ -467,7 +462,6 @@ main > section > h2 {
     border-right: 15px solid var(--defaultMode-bgColor);
 }
 
-
 .left-container {
     left: 0;
 }
@@ -476,7 +470,6 @@ main > section > h2 {
 }
     /* Projetos -END */
 /* Estilos para o Main -END*/
-
 
 /* Estilos para o Footer -START */
 footer {
